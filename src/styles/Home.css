@@ -1,0 +1,111 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* 🖼 Banner de pantalla completa */
+  .hero-banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/src/assets/images/banner2.jpg"); /* podés cambiar la imagen */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: zoomIn 4s ease-in-out forwards;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  
+  /* 🎯 Contenido del banner */
+  .banner-text {
+    margin: 60px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 30px 40px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-out;
+    max-width: 500px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .banner-text h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .banner-text p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* 🛒 Botón en el banner */
+  .banner-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .banner-button:hover {
+    background-color: #a8c7e4;
+    color: white;
+  }
+  
+  .product-section {
+    width: 100%;
+    padding: 80px 40px;
+    margin-top: 0;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .banner-text {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .banner-text h1 {
+      font-size: 32px;
+    }
+  
+    .banner-text p {
+      font-size: 14px;
+    }
+  
+    .banner-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }

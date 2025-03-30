@@ -1,0 +1,119 @@
+.cart {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* 🎨 Estilos para los productos en el carrito */
+  .cart-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  
+  /* 🖤 Botones de cantidad en negro */
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .quantity-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #333;
+  }
+  
+  /* 🛒 Botón de eliminar en negro */
+  .remove-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-button:hover {
+    background-color: #333;
+  }
+  
+  /* 💰 Total del carrito */
+  .cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* 🔥 Botón de Finalizar Compra */
+  .checkout-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🔴 Estado: Carrito vacío */
+  .checkout-button.disabled {
+    background-color: #e74c3c;
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  /* 🔵 Estado: Procesando compra */
+  .checkout-button.loading {
+    background-color: #05925c;
+    color: white;
+    animation: pulse 1s infinite;
+  }
+  
+  /* ✅ Estado: Compra finalizada */
+  .checkout-button.success {
+    background-color: #07ee67;
+    color: white;
+  }
+  
+  /* 🔥 Animación de "latido" mientras carga */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* 🔴 Botón de vaciar carrito en negro */
+  .clear-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .clear-button:hover {
+    background-color: #333;
+  }
+  
