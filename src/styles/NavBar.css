@@ -1,4 +1,4 @@
-/* 🌈 Fondo con animación de degradado */
+
 @keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -16,23 +16,22 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* 🎨 Estilos del logo */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
 .logo {
-  height: 50px; /* Ajustá el tamaño del logo */
+  height: 50px;
   width: auto;
   transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
-  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+  transform: scale(1.1);
 }
 
-/* 📂 Estilos de categorías */
+
 .nav-left {
   display: flex;
   align-items: center;
@@ -46,14 +45,14 @@
 
 .nav-link {
   text-decoration: none;
-  color: #fff; /* Blanco para contrastar con el fondo animado */
+  color: #fff; 
   font-size: 15px;
   position: relative;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #000; /* Negro al pasar el mouse */
+  color: #000; 
 }
 
 .nav-link:hover::after {
@@ -66,14 +65,14 @@
   left: 0;
 }
 
-/* 🔥 Resaltar categorías especiales */
+
 .nav-link.new {
-  color: #5a9bd8; /* Azul pastel */
+  color: #5a9bd8; 
   font-weight: bold;
 }
 
 .nav-link.sale {
-  color: #e63946; /* Rojo vibrante */
+  color: #e63946; 
   font-weight: bold;
 }
 

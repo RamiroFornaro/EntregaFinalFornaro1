@@ -6,7 +6,7 @@ import "../styles/Home.css";
 const Home = () => {
   return (
     <div className="home">
-      <BannerSlider /> {/* 👈 este es el componente dinámico que rota imágenes */}
+      <BannerSlider />
 
       <section className="product-section">
         <ItemListContainer />

@@ -4,7 +4,6 @@
     align-items: center;
   }
   
-  /* 🖼 Banner de pantalla completa */
   .hero-banner {
     width: 100%;
     height: 100vh;
@@ -18,7 +17,6 @@
     justify-content: flex-start;
   }
   
-  /* 🎯 Contenido del banner */
   .banner-text {
     margin: 60px;
     color: white;
@@ -43,7 +41,6 @@
     text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
   }
   
-  /* 🛒 Botón en el banner */
   .banner-button {
     background-color: #ffffff;
     color: #000000;
@@ -89,7 +86,6 @@
     }
   }
   
-  /* 📱 Responsive */
   @media (max-width: 768px) {
     .banner-text {
       margin: 20px;

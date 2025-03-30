@@ -17,7 +17,6 @@ import airForce107XX from "../assets/images/WMNS+AIR+FORCE+1+'07+XX.webp";
 import airForce107LX from "../assets/images/WMNS+AIR+FORCE+1+'07+LX.webp";
 import airForce1W from "../assets/images/W+AIR+FORCE+1+'07.webp";
 
-// ✅ Lista de productos
 export const products = [
   {
     id: "1",

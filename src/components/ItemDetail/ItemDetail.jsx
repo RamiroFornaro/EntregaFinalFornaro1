@@ -14,12 +14,10 @@ const ItemDetail = ({ product }) => {
 
   return (
     <div className="item-detail" style={{ padding: "20px", maxWidth: "600px", margin: "auto" }}>
-      {/* 🔥 Imagen del producto (SIN cambios en estilos) */}
       <div>
         <img src={product.image} alt={product.title} width="100%" />
       </div>
 
-      {/* 🔥 Información del producto (solo organización, sin modificar estilos) */}
       <div>
         <h2>{product.title}</h2>
         <p><strong>Descripción:</strong> {product.description}</p>
@@ -27,7 +25,6 @@ const ItemDetail = ({ product }) => {
         <p><strong>Stock disponible:</strong> {product.stock}</p>
       </div>
 
-      {/* 🔥 Botones de acción */}
       <div style={{ marginTop: "20px", display: "flex", gap: "10px", justifyContent: "center" }}>
         {added ? (
           <>
